@@ -6,7 +6,7 @@
 	 (timed-prime-test n)
 	 (search-for-primes-iter b (+ n 1)))
 	((< n (+ b 1) (search-for-primes-iter b (+ n 1))))
-	(else "\nend")))
+	(else (display "\nend"))))
 
 (define (timed-prime-test n)
   (newline)
@@ -37,3 +37,4 @@
 
 (define (even? n)
   (= (remainder n 2) 0))
+e
