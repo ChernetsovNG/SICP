@@ -14,8 +14,5 @@
 	(* 4 (f (- b h)))
 	(f b))))
 
-(define (h a b n)
-  (/ (- b a) n))
-
 (define (cube x)
   (* x x x))
