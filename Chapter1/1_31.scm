@@ -5,6 +5,11 @@
 	(iter (next a) (* result (term a)))))
   (iter a 1))
 
+(define (product-rec term a next b)
+  (if (> a b)
+      1
+      (* (term a) (product-rec term (next a) next b))))
+
 (define (inc x)
   (+ x 1))
 
