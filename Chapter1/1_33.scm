@@ -9,8 +9,8 @@
   (filtered-accumulate + 0 term a next b filter))
 
 ; находим сумму квадратов простых чисел в интервале от a до b
-(define (primes-sum a b)
-  (filtered-sum identity a inc b prime?))
+(define (primes-square-sum a b)
+  (filtered-sum square a inc b prime?))
 
 (define (smallest-divisor n)
   (find-divisor n 2))
