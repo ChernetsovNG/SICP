@@ -1,4 +1,4 @@
-(define fi
+(define (fi)
   (fixed-point (lambda (y) (+ 1 (/ 1 y))) 1.0))
 
 (define (fixed-point f first-guess)
